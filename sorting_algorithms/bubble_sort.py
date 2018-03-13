@@ -1,3 +1,10 @@
+# buuble sort is an algorithm with O(n^2) avarage complexity.
+# best case is O(n) while worst case is O(n^2)
+# Here n is the number of elements to be sorted.
+
+# Reson for O(n^2) time complexity is that there are two loops (one inner loop),
+# so avarage time complexity becomoes O(n^2)
+
 from __future__ import print_function
 import sys
 import numpy as np
