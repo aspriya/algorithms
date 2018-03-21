@@ -51,6 +51,13 @@ class Node{
       right.printInOrder();
   }
 
+  public int findMax(){
+    if(right == null)
+      return data;
+    else
+      return right.findMax();
+  }
+
 }
 
 public class BinarySearchTreeDemo{
@@ -70,6 +77,8 @@ public class BinarySearchTreeDemo{
       int num=Integer.parseInt(input);
       root.insert(num);
     }
+
+    System.out.println("Maximum is : " + root.findMax());
 
   }
   
